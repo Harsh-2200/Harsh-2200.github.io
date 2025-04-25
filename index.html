@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Harsh Harode - AI Developer & Machine Learning Engineer</title>
 
   <!--
     - favicon
@@ -23,9 +23,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--
+    - font awesome link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="theme-default">
 
   <!--
     - #MAIN
@@ -48,7 +53,7 @@
         <div class="info-content">
           <h1 class="name" title="Harsh Harode">Harsh Harode</h1>
 
-          <p class="title">AI developer</p>
+          <p class="title">AI Developer & Machine Learning Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +79,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:Harsh@example.com" class="contact-link">Harsh@example.com</a>
+              <a href="mailto:Harshharode1@gmail.com" class="contact-link">Harshharode1@gmail.com</a>
             </div>
 
           </li>
@@ -88,23 +93,9 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a href="tel:+919146912689" class="contact-link">+91 9146912689</a>
             </div>
 
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-<!-- 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
- -->
           </li>
 
           <li class="contact-item">
@@ -116,7 +107,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>India</address>
             </div>
 
           </li>
@@ -128,25 +119,29 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/harsh-harode" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://github.com/harshharode" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
         </ul>
 
+        <div class="separator"></div>
+        
+        <!-- Theme Selector - moved here -->
+        <div class="theme-selector">
+          <span class="theme-label">Theme:</span>
+          <button class="theme-btn active" data-theme="theme-default">Default</button>
+          <button class="theme-btn" data-theme="theme-neon">Neon</button>
+          <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
+          <button class="theme-btn" data-theme="theme-glitch">Glitch</button>
+        </div>
       </div>
 
     </aside>
@@ -170,23 +165,19 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-page="about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-page="resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-page="portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-page="contact">Contact</button>
           </li>
 
         </ul>
@@ -201,7 +192,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article data-page="about" class="active">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -209,196 +200,61 @@
 
         <section class="about-text">
           <p>
-            I thrive on unraveling complex problems, like a puzzle master piecing together the impossible. Challenges aren't just obstacles;
-            they're opportunities to make the complex seem effortless. 
-  
-          </p>
-
-          <p>
-            Much like a shrewd detective in the world of AI,
-            I'm always in search of the next "Precognitive" breakthrough,
-            unlocking the mysteries of deep learning and machine learning.
-            Whether it's diving into the heart of neural networks or embracing the latest tech trends,
-            you'll often find me in the midst of this electrifying AI journey.
+            Machine Learning Engineer skilled in TensorFlow, PyTorch, and Python. Expertise in developing innovative machine learning algorithms for complex business challenges, with a passion for contributing to cutting-edge projects in computer vision.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I'm doing</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Python Project</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Machine Learning icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
-
+                <h4 class="h4 service-item-title">Machine Learning Development</h4>
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Development of custom ML models, including SLMs, computer vision solutions, and NLP applications.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="AI Solutions icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
+                <h4 class="h4 service-item-title">AI Solutions</h4>
                 <p class="service-item-text">
-                  Professional development of Deep Learning for iOS and Android.
+                  Implementation of advanced AI solutions using TensorFlow, PyTorch, and custom architectures.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="Computer Vision icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
+                <h4 class="h4 service-item-title">Computer Vision</h4>
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Specialized in image processing, object detection, and segmentation using state-of-the-art models.
                 </p>
               </div>
-
             </li>
 
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Harsh was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Web Development icon" width="40">
               </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Harsh was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Harsh was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Harsh was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Professional web application development using Python, Django, and modern web technologies.
+                </p>
               </div>
             </li>
 
@@ -406,98 +262,38 @@
 
         </section>
 
+        <section class="skill">
 
-        <!--
-          - testimonials modal
-        -->
+          <h3 class="h3 skills-title">Skills</h3>
 
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Harsh was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning & Deep Learning</h5>
               </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
+              <p>TensorFlow, PyTorch, Keras, Scikit-learn, Computer Vision, NLP</p>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud & Tools</h5>
+              </div>
+              <p>AWS SageMaker, Azure, Git, Docker</p>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programming & Frameworks</h5>
+              </div>
+              <p>Python, Django, PostgreSQL, NumPy, Pandas</p>
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AI Technologies</h5>
+              </div>
+              <p>ChatGPT, LLM, OpenAI, TTS, Custom SLM Development</p>
             </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
           </ul>
 
         </section>
@@ -512,7 +308,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -524,51 +320,49 @@
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Deep Learning Inter      | Constems-AI </h4>
-
-              <span>Sept 2023 — Present</span>
-
+              <h4 class="h4 timeline-item-title">AI Developer at Idea Usher</h4>
+              <span>January 2025 - Present</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                • Custom Small Language Model (SLM): Architect and trained a 700 million-parameter SLM from scratch—leveraging SSM and Mamba SSM enhancements—optimized for local training and inference on a single NVIDIA RTX 3050 (8 GB VRAM).<br>
+                • Domain-Specific Fine-Tuning: Created and deployed LLM fine-tuning on proprietary datasets, boosting answer accuracy.<br>
+                • Text-to-Speech Integration: Integrated and customized 30+ TTS voices across multiple platforms.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Python Developer         | Zummit Lab</h4>
-
-              <span>Nov 2022 - Mar 2023</span>
-
+              <h4 class="h4 timeline-item-title">AI Developer at Constems-AI</h4>
+              <span>April 2024 - December 2024</span>
               <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
+                • Led development of U-Net segmentation model for NTRM particle detection, achieving 96% accuracy.<br>
+                • Trained a classifier across 2000 classes using ResNet-34.<br>
+                • Designed and implemented image categorization tool for dataset annotation.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Backend and ML engineer    | Beta Tester</h4>
-
-              <span>May 2022 - July 2022</span>
-
+              <h4 class="h4 timeline-item-title">Deep Learning Intern at Constem-AI</h4>
+              <span>September 2023 - March 2024</span>
               <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
+                • Optimized ResNet34, ResNet10, and DinoV2 architectures for the "Weak Classifier" project.<br>
+                • Developed custom dataset cleaning tools.<br>
+                • Led dataset annotation organization implementation.
               </p>
+            </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Python Developer at Zummit Lab</h4>
+              <span>November 2022 - March 2023</span>
+              <p class="timeline-text">
+                • Developed and maintained Python-based web applications.<br>
+                • Created efficient, reusable, and scalable code.<br>
+                • Implemented strategic improvements to meet industry standards.
+              </p>
             </li>
 
           </ol>
@@ -581,38 +375,85 @@
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"> Bachelor Degree </h4>
-
-              <span>2019 — 2023</span>
-
+              <h4 class="h4 timeline-item-title">B.E Computer Science</h4>
+              <span>2019 - 2023</span>
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Datta Meghe College of Engineering, Mumbai<br>
+                CGPA: 8.33
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Higher Secondary Certificate (HSC)</h4>
-
-              <span>2017 — 2019</span>
-
+              <h4 class="h4 timeline-item-title">Higher Secondary School</h4>
+              <span>2019</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                St Xavier High School, Nagpur, Maharashtra<br>
+                Percentage: 70.4%
               </p>
+            </li>
 
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">LoSt-HiRe</h4>
+              <p class="timeline-text">
+                • Implemented ML techniques for image and video enhancement, focusing on low-light to daylight conversion.<br>
+                • Utilized ESR-GAN and Ray framework.<br>
+                • Successfully achieved night to daylight conversion.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">YOLO-Webapp</h4>
+              <p class="timeline-text">
+                • Built real-time object detection web application using YOLO v3 and Django.<br>
+                • Implemented detection and classification of 32 object classes.<br>
+                • Enabled integration with smartphones, webcams, and CCTV systems.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Involvement</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ML Tech Lead at Google Developer Student Club</h4>
+              <span>November 2023 - October 2023</span>
+              <p class="timeline-text">
+                • Arranged and conducted ML webinars, workshops, and events.<br>
+                • Collaborated with industry experts and academic mentors.<br>
+                • Managed projects, hackathons, and coding challenges.
+              </p>
             </li>
 
           </ol>
@@ -707,7 +548,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -715,61 +556,19 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
+          <div class="filter-list">
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+            <button class="filter-item active" data-filter="all">All</button>
 
-            <li class="filter-item">
-              <button data-filter-btn>Python Project</button>
-            </li>
+            <button class="filter-item" data-filter="web">Web Development</button>
 
-            <li class="filter-item">
-              <button data-filter-btn>Deep Learning</button>
-            </li>
+            <button class="filter-item" data-filter="app">App Development</button>
 
-            <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Python Project</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Deep Learning</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Machine Learning</button>
-              </li>
-
-            </ul>
+            <button class="filter-item" data-filter="design">Design</button>
 
           </div>
 
-          <ul class="project-list">
+          <div class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="Machine Learning">
               <a href="#">
@@ -933,87 +732,7 @@
               </a>
             </li>
 
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
+          </div>
 
         </section>
 
@@ -1027,38 +746,46 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-<!--         
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
- -->
-
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Get in Touch</h3>
 
-          <form action="#" class="form" data-form>
+          <div class="contact-info">
+            <p>Feel free to reach out to me for any opportunities, collaborations, or questions about my work in AI and Machine Learning.</p>
+            
+            <ul class="contact-list">
+              <li>
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:Harshharode1@gmail.com">Harshharode1@gmail.com</a>
+              </li>
+              <li>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="https://www.linkedin.com/in/harsh-harode" target="_blank">linkedin.com/in/harsh-harode</a>
+              </li>
+              <li>
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+919146912689">+91 9146912689</a>
+              </li>
+            </ul>
+          </div>
+
+          <form id="contact-form">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button type="submit" id="submit-btn" disabled>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1081,7 +808,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./main.js"></script>
 
   <!--
     - ionicon link

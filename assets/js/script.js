@@ -140,20 +140,126 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+// Function to activate a page
+function activatePage(pageName) {
+  console.log("Activating page:", pageName);
+  
+  // Remove 'active' class from all navigation links and add to the matching one
+  for (let i = 0; i < navigationLinks.length; i++) {
+    const linkText = navigationLinks[i].textContent.toLowerCase().trim();
+    console.log("Comparing nav link:", linkText, "with page:", pageName);
+    
+    if (linkText === pageName) {
+      navigationLinks[i].classList.add('active');
+    } else {
+      navigationLinks[i].classList.remove('active');
     }
+  }
+  
+  // Remove 'active' class from all pages and add to the matching one
+  for (let i = 0; i < pages.length; i++) {
+    const pageId = pages[i].dataset.page.toLowerCase().trim();
+    console.log("Comparing page:", pageId, "with requested page:", pageName);
+    
+    if (pageId === pageName) {
+      console.log("MATCH FOUND - Activating page:", pageId);
+      pages[i].classList.add('active');
+    } else {
+      pages[i].classList.remove('active');
+    }
+  }
+  
+  // Update URL hash without scrolling (modern browsers)
+  history.pushState(null, null, `#${pageName}`);
+}
 
+// add event to all nav links
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function() {
+    const clickedPage = this.textContent.toLowerCase().trim();
+    console.log("Navigation link clicked:", clickedPage);
+    
+    // Activate the page
+    activatePage(clickedPage);
+    
+    // Ensure sidebar is closed on mobile when navigation happens
+    if (window.innerWidth < 1250 && sidebar.classList.contains("active")) {
+      sidebar.classList.remove("active");
+    }
+    
+    // Scroll to top
+    window.scrollTo(0, 0);
   });
 }
+
+// Listen for hash changes to support back/forward navigation
+window.addEventListener('hashchange', function() {
+  const pageName = window.location.hash.replace('#', '') || 'about';
+  activatePage(pageName);
+});
+
+// Theme switching functionality
+const themeButtons = document.querySelectorAll('.theme-btn');
+const body = document.body;
+
+// Set active theme
+for (let i = 0; i < themeButtons.length; i++) {
+  themeButtons[i].addEventListener('click', function() {
+    console.log("Theme button clicked:", this.getAttribute('data-theme'));
+    
+    // Remove active class from all buttons
+    for (let j = 0; j < themeButtons.length; j++) {
+      themeButtons[j].classList.remove('active');
+    }
+    
+    // Add active class to clicked button
+    this.classList.add('active');
+    
+    // Get theme name from data attribute
+    const themeName = this.getAttribute('data-theme');
+    console.log("Setting theme to:", themeName);
+    
+    // Remove all theme classes from body
+    body.classList.remove('theme-default', 'theme-neon', 'theme-cyber', 'theme-glitch');
+    
+    // Add selected theme class to body
+    body.classList.add(themeName);
+    
+    // Save theme preference to localStorage
+    localStorage.setItem('selectedTheme', themeName);
+    console.log("Theme saved to localStorage:", themeName);
+  });
+}
+
+// Initialize functionality once DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM fully loaded");
+  
+  // Load saved theme 
+  const savedTheme = localStorage.getItem('selectedTheme');
+  if (savedTheme) {
+    console.log("Applying saved theme:", savedTheme);
+    // Apply saved theme
+    body.classList.add(savedTheme);
+    
+    // Set active class on the corresponding button
+    for (let i = 0; i < themeButtons.length; i++) {
+      if (themeButtons[i].getAttribute('data-theme') === savedTheme) {
+        themeButtons[i].classList.add('active');
+      } else {
+        themeButtons[i].classList.remove('active');
+      }
+    }
+  }
+  
+  // Set the active page based on URL hash or default to 'about'
+  const initialPage = window.location.hash.replace('#', '') || 'about';
+  console.log("Initial page activation:", initialPage);
+  activatePage(initialPage);
+  
+  // Debug info
+  console.log("Available pages:");
+  for (let i = 0; i < pages.length; i++) {
+    console.log(`- ${pages[i].dataset.page} (${pages[i].classList.contains('active') ? 'active' : 'inactive'})`);
+  }
+});

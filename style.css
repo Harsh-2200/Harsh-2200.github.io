@@ -4,7 +4,13 @@
 
 
 /*===== VARIABLES CSS =====*/
-
+:root {
+  --primary-color: #5361FF;
+  --text-color: #2A3B47;
+  --light-text: #697477;
+  --background: #FAFAFF;
+  --transition: 0.25s ease;
+}
 
 @media screen and (min-width: 768px){
     :root{
@@ -452,4 +458,297 @@ img{
         width: 500px;
         right: 24%;
     }
+}
+
+/* Navigation styles */
+.navbar-link {
+  position: relative;
+  color: var(--light-text);
+  font-size: var(--fs-5);
+  padding: 8px 15px;
+  transition: color 0.25s;
+}
+
+.navbar-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--vegas-gold);
+  transition: width 0.25s;
+}
+
+.navbar-link:hover {
+  color: var(--white);
+}
+
+.navbar-link:hover::before {
+  width: 100%;
+}
+
+.navbar-link.active {
+  color: var(--vegas-gold);
+}
+
+.navbar-link.active::before {
+  width: 100%;
+}
+
+/* Contact section styles */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  color: var(--light-text);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-list {
+  display: grid;
+  gap: 15px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-text);
+}
+
+.contact-list li ion-icon {
+  color: var(--vegas-gold);
+  font-size: 20px;
+}
+
+.contact-list li a {
+  color: inherit;
+  transition: color 0.25s;
+}
+
+.contact-list li a:hover {
+  color: var(--vegas-gold);
+}
+
+/* Form styles */
+.form {
+  margin-top: 30px;
+}
+
+.form-input {
+  color: var(--white);
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.25s;
+}
+
+.form-input:focus {
+  border-color: var(--vegas-gold);
+}
+
+.form-btn {
+  background: var(--vegas-gold);
+  color: var(--eerie-black-1);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.form-btn:hover {
+  background: var(--light-text);
+}
+
+.form-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Theme selector styles */
+.theme-selector {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.theme-label {
+  color: var(--light-text);
+  font-size: var(--fs-6);
+}
+
+.theme-btn {
+  background: var(--jet);
+  color: var(--light-text);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.theme-btn:hover {
+  background: var(--vegas-gold);
+  color: var(--eerie-black-1);
+}
+
+.theme-btn.active {
+  background: var(--vegas-gold);
+  color: var(--eerie-black-1);
+}
+
+/* Article visibility */
+article[data-page] {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+article[data-page].active {
+    display: block;
+    opacity: 1;
+}
+
+/* Portfolio item visibility */
+[data-filter-item] {
+    display: none;
+}
+
+[data-filter-item].active {
+    display: block;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Navbar styles */
+.navbar {
+    position: relative;
+    padding: 20px 0;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-link {
+    position: relative;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar-link:hover::after,
+.navbar-link.active::after {
+    width: 100%;
+}
+
+.navbar-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Sidebar toggle */
+.sidebar.active .sidebar-info_more {
+  display: block;
+}
+
+.sidebar-info_more {
+  display: none;
+  transition: all var(--transition);
+}
+
+.info_more-btn {
+  position: relative;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.info_more-btn:hover {
+  background: var(--primary-color);
+  color: var(--background);
+}
+
+.info_more-btn ion-icon {
+  transition: transform var(--transition);
+}
+
+/* Theme selector styles */
+.theme-selector {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.theme-btn {
+  padding: 5px 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.theme-btn:hover,
+.theme-btn.active {
+  background: var(--primary-color);
+  color: var(--background);
 }
