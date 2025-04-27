@@ -1,821 +1,576 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harsh Harode - AI Developer & Machine Learning Engineer</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!--
-    - font awesome link
-  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Harode - Machine Learning Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-
-<body class="theme-default">
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Harsh Harode" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Harsh Harode">Harsh Harode</h1>
-
-          <p class="title">AI Developer & Machine Learning Engineer</p>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Harsh<span>Harode</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:Harshharode1@gmail.com" class="contact-link">Harshharode1@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919146912689" class="contact-link">+91 9146912689</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/harsh-harode" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/harshharode" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-        
-        <!-- Theme Selector - moved here -->
-        <div class="theme-selector">
-          <span class="theme-label">Theme:</span>
-          <button class="theme-btn active" data-theme="theme-default">Default</button>
-          <button class="theme-btn" data-theme="theme-neon">Neon</button>
-          <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
-          <button class="theme-btn" data-theme="theme-glitch">Glitch</button>
-        </div>
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-page="about">About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-page="resume">Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-page="portfolio">Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-page="contact">Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article data-page="about" class="active">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Machine Learning Engineer skilled in TensorFlow, PyTorch, and Python. Expertise in developing innovative machine learning algorithms for complex business challenges, with a passion for contributing to cutting-edge projects in computer vision.
-          </p>
-        </section>
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Machine Learning icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning Development</h4>
-                <p class="service-item-text">
-                  Development of custom ML models, including SLMs, computer vision solutions, and NLP applications.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="AI Solutions icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI Solutions</h4>
-                <p class="service-item-text">
-                  Implementation of advanced AI solutions using TensorFlow, PyTorch, and custom architectures.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="Computer Vision icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Computer Vision</h4>
-                <p class="service-item-text">
-                  Specialized in image processing, object detection, and segmentation using state-of-the-art models.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="Web Development icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
-                <p class="service-item-text">
-                  Professional web application development using Python, Django, and modern web technologies.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Skills</h3>
-
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning & Deep Learning</h5>
-              </div>
-              <p>TensorFlow, PyTorch, Keras, Scikit-learn, Computer Vision, NLP</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Cloud & Tools</h5>
-              </div>
-              <p>AWS SageMaker, Azure, Git, Docker</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Programming & Frameworks</h5>
-              </div>
-              <p>Python, Django, PostgreSQL, NumPy, Pandas</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">AI Technologies</h5>
-              </div>
-              <p>ChatGPT, LLM, OpenAI, TTS, Custom SLM Development</p>
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">AI Developer at Idea Usher</h4>
-              <span>January 2025 - Present</span>
-              <p class="timeline-text">
-                • Custom Small Language Model (SLM): Architect and trained a 700 million-parameter SLM from scratch—leveraging SSM and Mamba SSM enhancements—optimized for local training and inference on a single NVIDIA RTX 3050 (8 GB VRAM).<br>
-                • Domain-Specific Fine-Tuning: Created and deployed LLM fine-tuning on proprietary datasets, boosting answer accuracy.<br>
-                • Text-to-Speech Integration: Integrated and customized 30+ TTS voices across multiple platforms.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">AI Developer at Constems-AI</h4>
-              <span>April 2024 - December 2024</span>
-              <p class="timeline-text">
-                • Led development of U-Net segmentation model for NTRM particle detection, achieving 96% accuracy.<br>
-                • Trained a classifier across 2000 classes using ResNet-34.<br>
-                • Designed and implemented image categorization tool for dataset annotation.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Deep Learning Intern at Constem-AI</h4>
-              <span>September 2023 - March 2024</span>
-              <p class="timeline-text">
-                • Optimized ResNet34, ResNet10, and DinoV2 architectures for the "Weak Classifier" project.<br>
-                • Developed custom dataset cleaning tools.<br>
-                • Led dataset annotation organization implementation.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Python Developer at Zummit Lab</h4>
-              <span>November 2022 - March 2023</span>
-              <p class="timeline-text">
-                • Developed and maintained Python-based web applications.<br>
-                • Created efficient, reusable, and scalable code.<br>
-                • Implemented strategic improvements to meet industry standards.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">B.E Computer Science</h4>
-              <span>2019 - 2023</span>
-              <p class="timeline-text">
-                Datta Meghe College of Engineering, Mumbai<br>
-                CGPA: 8.33
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Higher Secondary School</h4>
-              <span>2019</span>
-              <p class="timeline-text">
-                St Xavier High School, Nagpur, Maharashtra<br>
-                Percentage: 70.4%
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Projects</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">LoSt-HiRe</h4>
-              <p class="timeline-text">
-                • Implemented ML techniques for image and video enhancement, focusing on low-light to daylight conversion.<br>
-                • Utilized ESR-GAN and Ray framework.<br>
-                • Successfully achieved night to daylight conversion.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">YOLO-Webapp</h4>
-              <p class="timeline-text">
-                • Built real-time object detection web application using YOLO v3 and Django.<br>
-                • Implemented detection and classification of 32 object classes.<br>
-                • Enabled integration with smartphones, webcams, and CCTV systems.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Involvement</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">ML Tech Lead at Google Developer Student Club</h4>
-              <span>November 2023 - October 2023</span>
-              <p class="timeline-text">
-                • Arranged and conducted ML webinars, workshops, and events.<br>
-                • Collaborated with industry experts and academic mentors.<br>
-                • Managed projects, hackathons, and coding challenges.
-              </p>
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">machine learning</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Deep learning</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Computer Vision</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Tensorflow</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <div class="filter-list">
-
-            <button class="filter-item active" data-filter="all">All</button>
-
-            <button class="filter-item" data-filter="web">Web Development</button>
-
-            <button class="filter-item" data-filter="app">App Development</button>
-
-            <button class="filter-item" data-filter="design">Design</button>
-
-          </div>
-
-          <div class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="Machine Learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Machine Learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Python Project">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Python Project</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Deep Learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Deep Learning</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Python Project">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Python Project</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Python Project">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Python Project</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Machine Learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Deep Learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Deep Learning</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Machine Learning">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-          </div>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Get in Touch</h3>
-
-          <div class="contact-info">
-            <p>Feel free to reach out to me for any opportunities, collaborations, or questions about my work in AI and Machine Learning.</p>
-            
-            <ul class="contact-list">
-              <li>
-                <ion-icon name="mail-outline"></ion-icon>
-                <a href="mailto:Harshharode1@gmail.com">Harshharode1@gmail.com</a>
-              </li>
-              <li>
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <a href="https://www.linkedin.com/in/harsh-harode" target="_blank">linkedin.com/in/harsh-harode</a>
-              </li>
-              <li>
-                <ion-icon name="call-outline"></ion-icon>
-                <a href="tel:+919146912689">+91 9146912689</a>
-              </li>
-            </ul>
-          </div>
-
-          <form id="contact-form">
-
-            <div class="input-wrapper">
-              <input type="text" id="name" name="name" class="form-input" placeholder="Full name" required>
-
-              <input type="email" id="email" name="email" class="form-input" placeholder="Email address" required>
-            </div>
-
-            <textarea id="message" name="message" class="form-input" placeholder="Your Message" required></textarea>
-
-            <button type="submit" id="submit-btn" disabled>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+    </header>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
     </div>
 
-  </main>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content slide-in-left">
+                <h1>Hi, I'm <span class="scale-up">Harsh Harode</span></h1>
+                <h2 id="typed-text">Machine Learning Engineer</h2>
+                <p>Skilled in TensorFlow, PyTorch, and Python, with expertise in developing innovative machine learning algorithms for complex business challenges.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="primary-btn">Get In Touch</a>
+                    <a href="#projects" class="secondary-btn">View My Work</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/harshharode" target="_blank" class="fade-in delay-1"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/harsh-harode" target="_blank" class="fade-in delay-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:Harshharode1@gmail.com" class="fade-in delay-3"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image slide-in-right">
+                <img src="images/profile.jpg" alt="Harsh Harode">
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                    <img src="images/about.jpg" alt="Harsh Harode">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                    <h3>Machine Learning Engineer</h3>
+                    <p>
+                        I am a Machine Learning Engineer with expertise in developing innovative machine learning algorithms for complex business challenges. 
+                        I have a passion for contributing to cutting-edge projects in computer vision and natural language processing.
+                    </p>
+                    <p>
+                        With experience at companies like Idea Usher and Constems-ai, I've worked on diverse projects ranging from custom language models to 
+                        advanced computer vision applications. My technical expertise spans across TensorFlow, PyTorch, and various cloud platforms.
+                    </p>
+                    <div class="info-list">
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="200">
+                            <span>Name:</span> Harsh Harode
+                        </div>
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                            <span>Email:</span> Harshharode1@gmail.com
+                        </div>
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                            <span>Phone:</span> +91 9146912689
+                        </div>
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                            <span>Location:</span> Mumbai, Maharashtra, India
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1QLanjvGxJei-jUmPU8lYWtWv85esZkv_/view" class="primary-btn" target="_blank" data-aos="zoom-in" data-aos-delay="600">View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <h4>Machine Learning</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <h4>Deep Learning</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                            <h4>Computer Vision</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                            <h4>NLP</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                            <h4>TensorFlow</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <h4>PyTorch</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                            <h4>Keras</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>Sklearn</h4>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Cloud & MLOps</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <h4>AWS Sagemaker</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                            <h4>Azure</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <h4>Docker</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git</h4>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Programming & Databases</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>PostgreSQL</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fab fa-django"></i></div>
+                            <h4>Django</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <h4>TTS</h4>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3>AI Technologies</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <h4>ChatGPT</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <h4>LLM</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fas fa-infinity"></i></div>
+                            <h4>OpenAI</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                            <h4>Numpy</h4>
+                        </div>
+                    </div>
+                </div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./main.js"></script>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                    <h3>Data Science</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <h4>Pandas</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <h4>Data Analysis</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h4>Data Visualization</h4>
+                        </div>
+                        <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                            <h4>Model Optimization</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 - Mamba SSM -->
+                <div class="project-card fade-in delay-1">
+                    <div class="project-image">
+                        <img src="images/mamba-ssm.jpg" alt="Mamba SSM">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mamba SSM Project</h3>
+                        <p>Implementation of state-space models using Mamba architecture for efficient sequence modeling. Optimized for local training and inference on consumer GPUs.</p>
+                        <div class="project-tags">
+                            <span>PyTorch</span>
+                            <span>Mamba</span>
+                            <span>SSM</span>
+                            <span>Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Harsh-2200/Mamba_ssm" class="btn-small" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Text Summarizer -->
+                <div class="project-card fade-in delay-2">
+                    <div class="project-image">
+                        <img src="images/text-summarizer.jpg" alt="Text Summarizer">
+                    </div>
+                    <div class="project-info">
+                        <h3>Text Summarizer</h3>
+                        <p>Web application for text summarization using fuzzy logic algorithms. Provides concise and accurate summaries of long text documents.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Fuzzy Logic</span>
+                            <span>NLP</span>
+                            <span>Web App</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Harsh-2200/Text-Summarizer-using-fuzzy-logic-webapp" class="btn-small" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Project 3 - Med Lab -->
+                <div class="project-card fade-in delay-3">
+                    <div class="project-image">
+                        <img src="images/med-lab.jpg" alt="Med Lab">
+                    </div>
+                    <div class="project-info">
+                        <h3>Med Lab</h3>
+                        <p>Medical laboratory management system with advanced features for patient records, test results, and automated reporting.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Healthcare</span>
+                            <span>Database</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Harsh-2200/Med-Lab" class="btn-small" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - LoSt-HiRe -->
+                <div class="project-card fade-in delay-4">
+                    <div class="project-image">
+                        <img src="images/lost-hire.jpg" alt="LoSt-HiRe">
+                    </div>
+                    <div class="project-info">
+                        <h3>LoSt-HiRe</h3>
+                        <p>Advanced image and video enhancement system that converts low-light scenarios to daylight using sophisticated machine learning techniques.</p>
+                        <div class="project-tags">
+                            <span>ESR-GAN</span>
+                            <span>Ray Framework</span>
+                            <span>Computer Vision</span>
+                            <span>Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - YOLO-Webapp -->
+                <div class="project-card fade-in delay-5">
+                    <div class="project-image">
+                        <img src="images/yolo-webapp.jpg" alt="YOLO-Webapp">
+                    </div>
+                    <div class="project-info">
+                        <h3>YOLO-Webapp</h3>
+                        <p>Real-time object detection web application using YOLO v3 and Django, capable of detecting 32 diverse object classes across images and video streams.</p>
+                        <div class="project-tags">
+                            <span>YOLO v3</span>
+                            <span>Django</span>
+                            <span>Computer Vision</span>
+                            <span>Real-time Detection</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="https://github.com/Harsh-2200" class="primary-btn fade-in" target="_blank">See More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience</h2>
+            <div class="timeline">
+                <!-- Idea Usher -->
+                <div class="timeline-item fade-in delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>AI Developer</h3>
+                        <h4>Idea Usher</h4>
+                        <p class="timeline-date">January 2025 - Present</p>
+                        <p class="timeline-location">Mohali, Punjab</p>
+                        <ul>
+                            <li>Architected and trained a 700 million-parameter SLM from scratch, leveraging SSM and Mamba SSM enhancements.</li>
+                            <li>Created and deployed LLM fine-tuning on proprietary datasets, boosting answer accuracy.</li>
+                            <li>Integrated and customized 30+ TTS voices including Google, OpenAI, Amazon Polly, and Azure AI.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Constems-ai -->
+                <div class="timeline-item fade-in delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>AI Developer</h3>
+                        <h4>Constems-ai</h4>
+                        <p class="timeline-date">April 2024 - December 2024</p>
+                        <p class="timeline-location">Noida, India</p>
+                        <ul>
+                            <li>Led the development of a U-Net segmentation model for NTRM particle detection, achieving 96% accuracy.</li>
+                            <li>Led a project to train a classifier across 2000 classes using ResNet-34.</li>
+                            <li>Designed and implemented a tool to categorize diverse images by type.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Constems-ai Intern -->
+                <div class="timeline-item fade-in delay-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Deep Learning Intern</h3>
+                        <h4>Constems-ai</h4>
+                        <p class="timeline-date">September 2023 - March 2024</p>
+                        <p class="timeline-location">Noida, India</p>
+                        <ul>
+                            <li>Led optimization efforts for ResNet34, ResNet10, and DinoV2 architectures.</li>
+                            <li>Developed and implemented a customized dataset cleaning tool.</li>
+                            <li>Led the design of a streamlined solution for annotating dataset organization.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Zummit Lab -->
+                <div class="timeline-item fade-in delay-4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Python Developer</h3>
+                        <h4>Zummit Lab</h4>
+                        <p class="timeline-date">November 2022 - March 2023</p>
+                        <p class="timeline-location">Bangalore, India</p>
+                        <ul>
+                            <li>Formulated and maintained Python-based web applications.</li>
+                            <li>Drafted efficient, reusable, and scalable code using Python.</li>
+                            <li>Implemented strategic improvements to meet evolving industry standards.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title fade-in">Education</h2>
+            <div class="timeline">
+                <!-- B.E Computer Science -->
+                <div class="timeline-item fade-in delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.E Computer Science</h3>
+                        <h4>Datta Meghe College of Engineering, Mumbai</h4>
+                        <p class="timeline-date">2019 - 2023</p>
+                        <p class="timeline-grade">CGPA: 8.33</p>
+                    </div>
+                </div>
+
+                <!-- Higher Secondary School -->
+                <div class="timeline-item fade-in delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary School</h3>
+                        <h4>St Xavier High School, Nagpur</h4>
+                        <p class="timeline-date">2019</p>
+                        <p class="timeline-grade">Percentage: 70.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Involvement Section -->
+    <section id="involvement" class="involvement">
+        <div class="container">
+            <h2 class="section-title fade-in">Leadership & Involvement</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>ML Tech Lead</h3>
+                        <h4>Google Developer Student Club - Teesside University</h4>
+                        <p class="timeline-date">November 2023 - October 2023</p>
+                        <ul>
+                            <li>Arranged and conducted Machine Learning webinars, workshops, and events for GDSC members.</li>
+                            <li>Collaborated with industry experts and academic mentors to deliver engaging and informative ML content.</li>
+                            <li>Initiated and managed projects, hackathons, and coding challenges for hands-on ML experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaboration, opportunities, or just to say hello!</p>
+                    <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Harshharode1@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9146912689</p>
+                        </div>
+                    </div>
+                    <div class="social-icons large" data-aos="fade-up" data-aos-delay="600">
+                        <a href="https://github.com/Harsh-2200" target="_blank" class="hover-effect"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/harsh-harode" target="_blank" class="hover-effect"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/harshharode" target="_blank" class="hover-effect"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form slide-in-right">
+                    <h3>Send Me a Message</h3>
+                    <form action="https://formspree.io/f/harshharode1@gmail.com" method="POST" id="contactForm" class="fade-in">
+                        <div class="form-group animate__animated animate__fadeInUp">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                            <textarea id="message" name="message" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="primary-btn animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <h1>Harsh<span>Harode</span></h1>
+                </div>
+                <p>&copy; 2024 Harsh Harode. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Harsh-2200" target="_blank" class="hover-effect"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/harsh-harode" target="_blank" class="hover-effect"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:Harshharode1@gmail.com" class="hover-effect"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+    </script>
+
+    <!-- Typed.js Library for Typing Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
 </body>
-
-</html>
+</html> 
+</body>
+</html> 
