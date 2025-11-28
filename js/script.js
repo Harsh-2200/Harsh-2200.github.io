@@ -1,4 +1,4 @@
-// Wait for the DOM to load
+// Wait for the DOM to load 
 document.addEventListener('DOMContentLoaded', function() {
     
     // Theme Toggle
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('theme', newTheme);
     });
     
-    function setTheme(theme) {
+    function setTheme(theme) { 
         htmlElement.setAttribute('data-theme', theme);
         
         if (theme === 'dark') {
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Scroll Reveal Animation - Enhanced
+    // Scroll Reveal Animation
     const observerOptions = {
         root: null,
         rootMargin: '0px',
