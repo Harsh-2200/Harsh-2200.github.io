@@ -1,5 +1,5 @@
-/* General Styles */
-:root {
+/* General Styles */ 
+:root { 
     /* Light Mode Colors */
     --primary-color: #4a6cf7;
     --primary-dark: #3955d8;
@@ -19,7 +19,7 @@
     --transition: all 0.3s ease;
     --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-
+ 
 [data-theme="dark"] {
     /* Dark Mode Colors */
     --primary-color: #6d8dff;
@@ -194,7 +194,7 @@ img {
 .theme-toggle i {
     font-size: 20px;
 }
-
+ 
 /* Header Styles */
 header {
     position: fixed;
